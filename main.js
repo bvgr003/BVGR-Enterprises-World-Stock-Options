@@ -1,4 +1,3 @@
-// Apply the CSS styles
 const styles = `
     body {
         margin: 0;
@@ -53,46 +52,38 @@ const styles = `
     }
 `;
 
-// Inject the CSS into the document
 const styleSheet = document.createElement("style");
 styleSheet.type = "text/css";
 styleSheet.innerText = styles;
 document.head.appendChild(styleSheet);
 
-// Create the header
 const header = document.createElement('header');
 header.textContent = 'BVGR Enterprises Stock Exchange Options';
 document.body.appendChild(header);
 
-// Create the main container
 const main = document.createElement('main');
 document.body.appendChild(main);
 
-// Create the chart container
 const chartContainer = document.createElement('div');
 chartContainer.className = 'chart-container';
 main.appendChild(chartContainer);
 
-// Create the stock ID element
 const stockId = document.createElement('div');
 stockId.className = 'stock-id';
 stockId.textContent = 'BVGR Enterprises - BVGRE';
 chartContainer.appendChild(stockId);
 
-// Create the TradingView widget container
 const tradingViewContainer = document.createElement('div');
 tradingViewContainer.className = 'tradingview-widget-container';
 tradingViewContainer.style.height = '100%';
 tradingViewContainer.style.width = '100%';
 
-// Create the widget div
 const widgetDiv = document.createElement('div');
 widgetDiv.className = 'tradingview-widget-container__widget';
 widgetDiv.style.height = 'calc(100% - 32px)';
 widgetDiv.style.width = '100%';
 tradingViewContainer.appendChild(widgetDiv);
 
-// Create the copyright div
 const copyrightDiv = document.createElement('div');
 copyrightDiv.className = 'tradingview-widget-copyright';
 
@@ -109,16 +100,13 @@ copyrightLink.appendChild(span);
 copyrightDiv.appendChild(copyrightLink);
 tradingViewContainer.appendChild(copyrightDiv);
 
-// Append the TradingView container to the chart container
 chartContainer.appendChild(tradingViewContainer);
 
-// Create the script element for TradingView
 const script = document.createElement('script');
 script.type = 'text/javascript';
 script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
 script.async = true;
 
-// Define the widget configuration
 const config = {
     "autosize": true,
     "symbol": "NASDAQ:AAPL",
@@ -136,10 +124,8 @@ const config = {
     "support_host": "https://www.tradingview.com"
 };
 
-// Pass the configuration to the script
 script.innerHTML = JSON.stringify(config);
 
-// Append the script to the TradingView container
 tradingViewContainer.appendChild(script);
 
 
