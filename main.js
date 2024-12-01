@@ -5,14 +5,14 @@ const styles = `
         display: grid;
         grid-template-rows: 50px 1fr;
         height: 100vh;
-        background-color: #1e1e1e;
+        background-color: transparent;
         color: #fff;
         text-align: center;
     }
 
     header {
         grid-row: 1 / 2;
-        background-color: #2c2c2c;
+        background-color: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -67,7 +67,7 @@ styleSheet.innerText = styles;
 document.head.appendChild(styleSheet);
 
 const header = document.createElement('header');
-header.textContent = 'BVGR Enterprises Stock Exchange Options';
+header.textContent = '';
 document.body.appendChild(header);
 
 const main = document.createElement('main');
