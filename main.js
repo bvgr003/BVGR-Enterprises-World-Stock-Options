@@ -103,7 +103,7 @@ copyrightLink.target = '_blank';
 
 const span = document.createElement('span');
 span.className = 'blue-text';
-span.textContent = 'Track all markets on TradingView';
+span.textContent = '';
 
 copyrightLink.appendChild(span);
 copyrightDiv.appendChild(copyrightLink);
@@ -139,7 +139,7 @@ tradingViewContainer.appendChild(script);
 
 const cornerLink = document.createElement('a');
 cornerLink.href = "https://bvgr003.github.io/BVGR-Enterprises/";
-cornerLink.target = "_blank"; // Opens the link in a new tab
+cornerLink.target = "_blank"; 
 
 const cornerLogo = document.createElement('img');
 cornerLogo.src = "Logos/bvgre.png";
@@ -154,7 +154,7 @@ cornerLogo.style.border = "2px solid silver";
 cornerLogo.style.borderRadius = "10px";
 cornerLogo.style.zIndex = "999";
 
-cornerLink.appendChild(cornerLogo); // Wrap the image in the link
-chartContainer.appendChild(cornerLink); // Add the link to the chart container
+cornerLink.appendChild(cornerLogo); 
+chartContainer.appendChild(cornerLink); 
 
 
