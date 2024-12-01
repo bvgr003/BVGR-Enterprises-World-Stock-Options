@@ -57,7 +57,7 @@ const styles = `
         left: 20px;
         width: 50px;
         height: 50px;
-        z-index: 9999; /* Ensures it's on top of everything else */
+        z-index: 9999; 
     }
 `;
 
