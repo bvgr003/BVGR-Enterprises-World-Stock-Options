@@ -5,7 +5,7 @@ const styles = `
         display: grid;
         grid-template-rows: 50px 1fr;
         height: 100vh;
-        background-color: transparent;
+        background-color: darkslategray;
         color: #fff;
         text-align: center;
     }
