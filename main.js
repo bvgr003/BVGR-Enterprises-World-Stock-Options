@@ -50,6 +50,15 @@ const styles = `
         font-weight: bold;
         color: white;
     }
+
+    .corner-logo {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 9999; /* Ensures it's on top of everything else */
+    }
 `;
 
 const styleSheet = document.createElement("style");
@@ -127,5 +136,25 @@ const config = {
 script.innerHTML = JSON.stringify(config);
 
 tradingViewContainer.appendChild(script);
+
+const cornerLink = document.createElement('a');
+cornerLink.href = "https://bvgr003.github.io/BVGR-Enterprises/";
+cornerLink.target = "_blank"; // Opens the link in a new tab
+
+const cornerLogo = document.createElement('img');
+cornerLogo.src = "Logos/bvgre.png";
+cornerLogo.alt = "BVGR Logo";
+cornerLogo.className = "corner-logo";
+cornerLogo.style.position = "absolute";
+cornerLogo.style.top = "380px";
+cornerLogo.style.left = "25px";
+cornerLogo.style.width = "50px";
+cornerLogo.style.height = "50px";
+cornerLogo.style.border = "2px solid silver";
+cornerLogo.style.borderRadius = "10px";
+cornerLogo.style.zIndex = "999";
+
+cornerLink.appendChild(cornerLogo); // Wrap the image in the link
+chartContainer.appendChild(cornerLink); // Add the link to the chart container
 
 
