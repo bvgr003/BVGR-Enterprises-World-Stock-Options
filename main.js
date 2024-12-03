@@ -139,6 +139,7 @@ tradingViewContainer.appendChild(script);
 
 const cornerLink = document.createElement('a');
 cornerLink.href = "https://bvgr003.github.io/BVGR-Enterprises/bvgr-enterprises-private-stock-options.html";
+cornerLink.target = "_blank";
 const cornerLogo = document.createElement('img');
 cornerLogo.src = "Logos/bvgre.png";
 cornerLogo.alt = "BVGR Logo";
@@ -151,7 +152,6 @@ cornerLogo.style.height = "50px";
 cornerLogo.style.border = "2px solid silver";
 cornerLogo.style.borderRadius = "10px";
 cornerLogo.style.zIndex = "999";
-
 cornerLink.appendChild(cornerLogo); 
 chartContainer.appendChild(cornerLink); 
 
