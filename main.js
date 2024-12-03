@@ -138,9 +138,7 @@ script.innerHTML = JSON.stringify(config);
 tradingViewContainer.appendChild(script);
 
 const cornerLink = document.createElement('a');
-cornerLink.href = "https://bvgr003.github.io/BVGR-Enterprises/";
-cornerLink.target = "_blank"; 
-
+cornerLink.href = "https://bvgr003.github.io/BVGR-Enterprises/bvgr-enterprises-private-stock-options.html";
 const cornerLogo = document.createElement('img');
 cornerLogo.src = "Logos/bvgre.png";
 cornerLogo.alt = "BVGR Logo";
