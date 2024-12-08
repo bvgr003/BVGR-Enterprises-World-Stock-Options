@@ -1,14 +1,14 @@
 const styles = `
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        display: grid;
-        grid-template-rows: 50px 1fr;
-        height: 100vh;
-        background-color: darkslategray;
-        color: #fff;
-        text-align: center;
-    }
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+    color: green;
+    text-align: center;
+}
 
     header {
         grid-row: 1 / 2;
